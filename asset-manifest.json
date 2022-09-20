@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/audiophile-webshop/static/css/main.ae9cfdca.css",
+    "main.js": "/audiophile-webshop/static/js/main.727d9880.js",
+    "static/js/496.4b554f2b.chunk.js": "/audiophile-webshop/static/js/496.4b554f2b.chunk.js",
+    "static/media/image-header.jpg": "/audiophile-webshop/static/media/image-header.d200a3583e72c7981f46.jpg",
+    "static/media/image-hero.jpg": "/audiophile-webshop/static/media/image-hero.55c18e980adf7658ae26.jpg",
+    "static/media/image-speaker-zx7.jpg": "/audiophile-webshop/static/media/image-speaker-zx7.173a4cb5c7acfc7f300c.jpg",
+    "static/media/logo.svg": "/audiophile-webshop/static/media/logo.e03974f8eeb36e51813ca6f10681acdc.svg",
+    "static/media/icon-instagram.svg": "/audiophile-webshop/static/media/icon-instagram.8d0df55595e16bac2d486efccdc6b4b3.svg",
+    "static/media/icon-cart.svg": "/audiophile-webshop/static/media/icon-cart.5e1893a62995fc7b443abe7bee68063e.svg",
+    "index.html": "/audiophile-webshop/index.html",
+    "static/media/icon-twitter.svg": "/audiophile-webshop/static/media/icon-twitter.5dc7711ff2433b3b89ee7742a407e3bd.svg",
+    "static/media/icon-facebook.svg": "/audiophile-webshop/static/media/icon-facebook.e9773e52bc64ea377cb95af7ccb6877e.svg",
+    "static/media/pattern-circles.svg": "/audiophile-webshop/static/media/pattern-circles.f4df3610b83b818abbbe.svg",
+    "main.ae9cfdca.css.map": "/audiophile-webshop/static/css/main.ae9cfdca.css.map",
+    "main.727d9880.js.map": "/audiophile-webshop/static/js/main.727d9880.js.map",
+    "496.4b554f2b.chunk.js.map": "/audiophile-webshop/static/js/496.4b554f2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae9cfdca.css",
+    "static/js/main.727d9880.js"
+  ]
+}
