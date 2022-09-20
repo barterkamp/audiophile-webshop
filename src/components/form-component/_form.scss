@@ -1,0 +1,121 @@
+label {
+  color: $primary-black;
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-left: 2.4rem;
+  width: 30rem;
+  border-radius: 8px;
+  outline: 0;
+  border: 1px solid #cfcfcf;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 50rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 28rem;
+  }
+}
+
+input:focus {
+  border: 1px solid $primary-orange;
+}
+
+// checkout form component
+
+.checkout-form {
+  background-color: #fff;
+  border-radius: 8px;
+  grid-column: 1 / span 8;
+  margin-bottom: 14rem;
+  margin-top: 14rem;
+  padding: 5.4rem 3.8rem;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    grid-column: 1 / -1;
+    padding: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: 6.5rem;
+  }
+}
+
+.checkout-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: start;
+  gap: 1.6rem;
+}
+
+.checkout-header {
+  grid-column: 1 / -1;
+}
+
+.checkout-subtitle {
+  grid-column: 1 / -1;
+}
+
+.authentication-form {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 2.4rem;
+  margin-top: 1.6rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+#address {
+  width: 61.5rem;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 28rem;
+  }
+}
+
+// sign-in form
+
+.sign-in-form {
+  grid-column: 2 / span 6;
+  align-self: start;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-column: 3 / -1;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    grid-column: 1 / -1;
+  }
+}
+
+// sign-up form
+
+.sign-up-form {
+  grid-column: 8 / 13;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-column: 3 / -1;
+    margin-top: 4rem;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    grid-column: 1 / -1;
+    margin-top: 4rem;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+}

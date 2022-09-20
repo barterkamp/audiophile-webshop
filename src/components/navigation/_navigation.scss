@@ -1,0 +1,101 @@
+.navigation {
+  background-color: $secondary-black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100px;
+
+  @media (max-width: 1024px) {
+    positon: relative;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    & .hamburger {
+      width: 32px;
+      height: 32px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: none;
+      cursor: pointer;
+      margin-right: 2.4rem;
+
+      @media (max-width: 1080px) {
+        display: block;
+      }
+    }
+  }
+
+  &__links,
+  &__mobile-links {
+    display: flex;
+    gap: 3.5rem;
+  }
+
+  &__links {
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @media (max-width: 1080px) {
+      display: block;
+      background-color: rgba(25, 25, 25, 0.9);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      z-index: 3;
+    }
+  }
+
+  &__mobile-links {
+    display: none;
+
+    @media (max-width: 1080px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: $primary-orange;
+    }
+  }
+
+  &__actions {
+    display: flex;
+  }
+
+  &__sign-in {
+    margin-right: 3.4rem;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      margin-right: 1rem;
+    }
+  }
+}

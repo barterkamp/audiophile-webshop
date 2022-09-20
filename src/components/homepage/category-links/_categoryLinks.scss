@@ -1,0 +1,104 @@
+.category-links {
+  &__section {
+    @include gridPrimary;
+    column-gap: 3rem;
+    row-gap: 1.2rem;
+    margin: 0 auto;
+
+    @media (min-width: 768px) and (max-width: 1080px) {
+      column-gap: 1rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      @include flexColumn;
+      justify-content: center;
+      align-items: stretch;
+      gap: 6.8rem;
+    }
+  }
+
+  &__container {
+    position: relative;
+    background-color: $primary-grey;
+    padding-bottom: 3rem;
+    padding-top: 12rem;
+    border-radius: 8px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding-top: 8rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding-top: 9rem;
+    }
+  }
+
+  &__headphones {
+    grid-column: 1 / 5;
+  }
+
+  &__speakers {
+    grid-column: 5 / 9;
+  }
+
+  &__earphones {
+    grid-column: 9 / 13;
+  }
+
+  &__info {
+    @include flexCenter(column);
+  }
+
+  &__thumbnail-1,
+  &__thumbnail-2,
+  &__thumbnail-3 {
+    position: absolute;
+    left: 20%;
+    width: 20rem;
+
+    @media (min-width: 768px) and (max-width: 1080px) {
+      left: 17%;
+      width: 15rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      left: 27%;
+      width: 14rem;
+    }
+  }
+
+  &__thumbnail-1 {
+    top: -35%;
+
+    @media (min-width: 768px) and (max-width: 1080px) {
+      top: -30%;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      top: -25%;
+    }
+  }
+
+  &__thumbnail-2 {
+    top: -30%;
+
+    @media (min-width: 768px) and (max-width: 1080px) {
+      top: -28%;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      top: -24%;
+    }
+  }
+
+  &__thumbnail-3 {
+    top: -25%;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      top: -24%;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      top: -17%;
+    }
+  }
+}

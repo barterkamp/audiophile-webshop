@@ -1,0 +1,194 @@
+p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.bold {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.accent {
+  color: $primary-orange;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.goback-link {
+  color: $primary-black;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  &:hover {
+    color: $primary-orange;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 2.8rem;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 2.4rem;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-size: 3.6rem;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 2.8rem;
+    line-height: 38px;
+  }
+}
+
+.font-white {
+  color: $white;
+  opacity: 1;
+}
+
+.font-grey {
+  color: $white;
+  opacity: 0.75;
+}
+
+.font-accent {
+  color: $primary-orange;
+}
+
+.overline,
+.subtitle {
+  text-transform: uppercase;
+  color: $primary-orange;
+}
+
+.overline {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 19px;
+  letter-spacing: 10px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.heading {
+  color: $white;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .heading {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  opacity: 1;
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: $primary-grey;
+}
+
+.amount--small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  opacity: 1;
+  background-color: $primary-grey;
+  height: 3rem;
+  width: 3rem;
+}
+
+.increment,
+.decrement {
+  opacity: 0.25;
+}
+
+.item-list {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.item-quantity {
+  color: $primary-orange;
+  font-weight: 700;
+  opacity: 1;
+  margin-right: 2.4rem;
+}
+
+.item-description {
+  opacity: 0.5;
+}

@@ -1,0 +1,79 @@
+.modal {
+  &__background {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    z-index: 1;
+  }
+
+  &__container {
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    height: 50rem;
+    left: 50%;
+    overflow: hidden;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 377px;
+    z-index: 10;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 320px;
+    }
+  }
+
+  &__header,
+  &__total {
+    @include flexSpaceBetween(row);
+  }
+
+  &__remove-items {
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-orange;
+      cursor: pointer;
+    }
+  }
+
+  &__item,
+  &__empty-cart {
+    @include flexSpaceBetween(row);
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__items {
+    @include flexColumn;
+    flex: 1;
+    gap: 2.4rem;
+    overflow: auto;
+  }
+
+  &__item-image {
+    border-radius: 8px;
+    height: 6.4rem;
+    overflow: hidden;
+    width: 6.4rem;
+  }
+
+  &__item-productandprice {
+    @include flexColumn;
+    flex-grow: 2;
+  }
+
+  &-price {
+    font-size: 1.8rem;
+  }
+}

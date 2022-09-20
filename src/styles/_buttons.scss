@@ -1,0 +1,102 @@
+.btn {
+  border: none;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 18px;
+  outline: 0;
+  transition: all 0.3s;
+  text-transform: uppercase;
+
+  &.btn-primary {
+    background-color: $primary-orange;
+    color: $white;
+
+    &:hover {
+      background-color: $secondary-orange;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border: 1px solid $primary-black;
+    color: $primary-black;
+
+    &:hover {
+      background-color: $primary-black;
+      color: $white;
+    }
+  }
+
+  &.btn-secondary--black {
+    background-color: $primary-black;
+    border: 1px solid $primary-black;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $primary-black;
+    }
+  }
+
+  &.btn-tertiary {
+    background: transparent;
+    color: $primary-black;
+    opacity: 0.5;
+    padding: 0 3rem;
+    position: relative;
+    margin-top: 1rem;
+
+    &::after {
+      border-right: 2px solid $primary-orange;
+      border-top: 2px solid $primary-orange;
+      content: "";
+      display: inline-block;
+      height: 0.6em;
+      position: absolute;
+      right: 1.5rem;
+      top: 30%;
+      transform: rotate(45deg);
+      width: 0.6em;
+    }
+
+    &:hover {
+      color: $primary-orange;
+    }
+  }
+}
+
+.btn-amount {
+  height: 4.8rem;
+  width: 4.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  background-color: $primary-grey;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-orange;
+  }
+}
+
+.btn-amount--small,
+.btn-close {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  background-color: $primary-grey;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    color: $primary-orange;
+  }
+}
+
+.btn-close {
+  border-radius: 100%;
+}

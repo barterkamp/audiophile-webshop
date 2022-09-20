@@ -1,0 +1,46 @@
+.categoryItems {
+
+  &__container {
+    @include gridPrimary;
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @include flexCenter(column);
+      gap: 5.2rem;
+      margin-top: 12rem;
+      margin-bottom: 12rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      @include flexCenter(column);
+      gap: 3.2rem;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+    }
+  }
+  &__info {
+    @include flexColumn;
+    gap: 3rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @include flexCenter(column);
+      padding-left: 4rem;
+      padding-right: 4rem;
+      text-align: center;
+
+      &.flex-order-reverse {
+        order: 1;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      text-align: center;
+      align-items: center;
+
+      &.flex-order-reverse {
+        order: 1;
+      }
+    }
+  }
+}

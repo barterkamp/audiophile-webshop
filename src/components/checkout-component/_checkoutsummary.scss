@@ -1,0 +1,56 @@
+.summary {
+  grid-column: 9 / -1;
+
+  @media (min-width: 320px) and (max-width: 1024px) {
+    grid-column: 1 / -1;
+  }
+
+  &__container {
+    @include flexColumn;
+    align-self: start;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    gap: 3.2rem;
+    height: auto;
+    margin-top: 14rem;
+    padding: 3rem;
+    z-index: 2;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      margin-top: 0;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__item {
+    @include flexSpaceBetween(row);
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__item-image {
+    width: 6.4rem;
+    height: 6.4rem;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  &__item-productandprice {
+    @include flexColumn;
+    flex-grow: 2;
+  }
+
+  &-price {
+    font-size: 1.8rem;
+  }
+
+  &__totals {
+    @include flexColumn;
+    gap: 1rem;
+  }
+
+  &__total {
+    @include flexSpaceBetween(row);
+  }
+}

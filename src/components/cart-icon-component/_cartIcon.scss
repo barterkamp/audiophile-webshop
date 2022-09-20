@@ -1,0 +1,23 @@
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-count {
+  @include flexCenter(row);
+  background-color: $white;
+  border-radius: 50%;
+  bottom: 15px;
+  color: $primary-black;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 25px;
+  left: 20px;
+  position: absolute;
+  width: 25px;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 24px;
+}

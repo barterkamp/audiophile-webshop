@@ -1,0 +1,118 @@
+.speaker-orange {
+  &__container {
+    @include gridPrimary;
+    background-color: $primary-orange;
+    background-image: url(../../public/assets/home/desktop/pattern-circles.svg);
+    background-position: -120% 5%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    column-gap: 3rem;
+    overflow: hidden;
+    position: relative;
+    row-gap: 1.2rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @include flexCenter(column);
+      gap: 6.4rem;
+      padding-top: 5.2rem;
+      padding-bottom: 5.2rem;
+      background-position: center bottom 50px;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      @include flexCenter(column);
+      background-position: center top -10rem;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    @include flexColumn;
+    gap: 2.4rem;
+    grid-column: 8/12;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      align-items: center;
+      justify-content: center;
+      margin-left: 17rem;
+      margin-right: 17rem;
+      text-align: center;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      align-items: center;
+      justify-content: center;
+      margin-left: 2.4rem;
+      margin-right: 2.4rem;
+      margin-bottom: 5.5rem;
+      text-align: center;
+    }
+  }
+
+  &__image {
+    grid-column: 2/6;
+    margin-top: 9.6rem;
+    margin-bottom: -1rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      margin-top: 5.5rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__image-1 {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 20rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 10rem;
+    }
+  }
+}
+
+.speaker-gray {
+  &__container {
+    @include gridPrimary;
+    column-gap: 3rem;
+    row-gap: 1.2rem;
+    margin: 0 auto;
+    background-color: $primary-grey;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../../public/assets/home/desktop/image-speaker-zx7.jpg);
+    background-repeat: no-repeat;
+    background-position: -120% 5%;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      background-image: url(../../public/assets/home/tablet/image-speaker-zx7.jpg);
+      background-position: right 0;
+      background-size: cover;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      background-image: url(../../public/assets/home/mobile/image-speaker-zx7.jpg);
+      background-position: right 0;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    grid-column: 2 / span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin: 10rem 0 10rem 0;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      justify-content: center;
+      grid-column: 2 / -1;
+    }
+  }
+}
