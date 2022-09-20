@@ -38,18 +38,18 @@ const SpeakerItem = ({ products }) => {
               <picture>
                 {/* mobile image */}
                 <source
-                  srcSet={speakers.image.mobile}
+                  srcSet={process.env.PUBLIC_URL + speakers.image.mobile}
                   media="(max-width: 430px)"
                 />
 
                 {/* tablet image*/}
                 <source
-                  srcSet={speakers.image.tablet}
+                  srcSet={process.env.PUBLIC_URL + speakers.image.tablet}
                   media="(max-width: 1024px)"
                 />
 
                 <img
-                  src={speakers.image.desktop}
+                  src={process.env.PUBLIC_URL + speakers.image.desktop}
                   alt={`${name} against a grey background`}
                 />
               </picture>
@@ -100,21 +100,21 @@ const SpeakerItem = ({ products }) => {
               <div className="gallery-image-1">
                 <img
                   className="gallery-photo"
-                  src={speakers.gallery.first.desktop}
+                  src={process.env.PUBLIC_URL + speakers.gallery.first.desktop}
                   alt={`${speakers.name}`}
                 />
               </div>
               <div className="gallery-image-2">
                 <img
                   className="gallery-photo"
-                  src={speakers.gallery.second.desktop}
+                  src={process.env.PUBLIC_URL + speakers.gallery.second.desktop}
                   alt={`${speakers.name}`}
                 />
               </div>
               <div className="gallery-image-3">
                 <img
                   className="gallery-photo"
-                  src={speakers.gallery.third.desktop}
+                  src={process.env.PUBLIC_URL + speakers.gallery.third.desktop}
                   alt={` ${speakers.name}`}
                 />
               </div>

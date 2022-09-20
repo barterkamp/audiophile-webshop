@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import { BrowserRouter } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import { store } from "./utils/store";
 import { Provider } from "react-redux";
 import { UserProvider } from "./features/user/userContext";
@@ -17,11 +17,11 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <UserProvider>
-        <HashRouter>
+        <BrowserRouter>
           <ToastContainer autoClose={1500} />
           <ScrollToTop />
           <App />
-        </HashRouter>
+        </BrowserRouter>
       </UserProvider>
     </Provider>
   </React.StrictMode>

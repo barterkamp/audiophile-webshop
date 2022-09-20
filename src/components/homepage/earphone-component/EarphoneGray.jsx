@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import EarhoneDesktop from "./yx1-desktop.jpg";
+import EarphoneTablet from "./yx1-tablet.jpg";
+import EarphoneMobile from "./yx1-mobile.jpg";
 
 const EarphoneGray = ({ products }) => {
   return (
@@ -9,22 +12,18 @@ const EarphoneGray = ({ products }) => {
           <picture>
             {/* Mobile */}
             <source
-              srcSet="
-            ../../assets/home/mobile/image-earphones-yx1.jpg
-            "
+              srcSet={EarphoneMobile}
               media="(max-width: 420px)"
             />
 
             {/* tablet */}
             <source
-              srcSet="
-            ../../assets/home/tablet/image-earphones-yx1.jpg
-            "
+              srcSet={EarphoneTablet}
               media="(max-width: 1024px)"
             />
 
             <img
-              src="../../assets/home/desktop/image-earphones-yx1.jpg"
+              src={EarhoneDesktop}
               alt="The black YX1 wireless earphones on a black background"
             />
           </picture>

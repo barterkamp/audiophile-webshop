@@ -13,7 +13,7 @@ const CheckoutSummary = () => {
           <div className="summary__item" key={item.id}>
             <div className="summary__item-image">
               <img
-                src={`../../assets/cart/image-${item.slug}.jpg`}
+                src={`${process.env.PUBLIC_URL}/assets/cart/image-${item.slug}.jpg`}
                 alt={`thumbnail of the ${item.name}`}
               />
             </div>

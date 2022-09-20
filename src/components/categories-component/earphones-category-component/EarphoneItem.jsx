@@ -39,18 +39,18 @@ const EarphoneItem = ({ products }) => {
               <picture>
                 {/* mobile image */}
                 <source
-                  srcSet={earphones.image.mobile}
+                  srcSet={process.env.PUBLIC_URL + earphones.image.mobile}
                   media="(max-width: 430px)"
                 />
 
                 {/* tablet image*/}
                 <source
-                  srcSet={earphones.image.tablet}
+                  srcSet={process.env.PUBLIC_URL + earphones.image.tablet}
                   media="(max-width: 1024px)"
                 />
 
                 <img
-                  src={earphones.image.desktop}
+                  src={process.env.PUBLIC_URL + earphones.image.desktop}
                   alt={`The ${name} against a grey background`}
                 />
               </picture>
@@ -101,21 +101,21 @@ const EarphoneItem = ({ products }) => {
               <div className="gallery-image-1">
                 <img
                   className="gallery-photo"
-                  src={earphones.gallery.first.desktop}
+                  src={process.env.PUBLIC_URL + earphones.gallery.first.desktop}
                   alt={`The ${earphones.name}`}
                 />
               </div>
               <div className="gallery-image-2">
                 <img
                   className="gallery-photo"
-                  src={earphones.gallery.second.desktop}
+                  src={process.env.PUBLIC_URL + earphones.gallery.second.desktop}
                   alt={`The ${earphones.name}`}
                 />
               </div>
               <div className="gallery-image-3">
                 <img
                   className="gallery-photo"
-                  src={earphones.gallery.third.desktop}
+                  src={process.env.PUBLIC_URL + earphones.gallery.third.desktop}
                   alt={`The ${earphones.name}`}
                 />
               </div>

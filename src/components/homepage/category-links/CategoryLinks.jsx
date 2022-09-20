@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Headphone from "./thumbnail-headphones.png";
+import Earphone from "./thumbnail-earphones.png";
+import Speaker from "./thumbnail-speakers.png";
 
 const CategoryLinks = () => {
   return (
@@ -16,7 +19,7 @@ const CategoryLinks = () => {
           <div className="category-links__image">
             <img
               className="category-links__thumbnail-1"
-              src="../../assets/shared/desktop/image-category-thumbnail-headphones.png"
+              src={Headphone}
               alt="Thumbnail of a black headphone"
             />
           </div>
@@ -33,7 +36,7 @@ const CategoryLinks = () => {
           <div className="category-links__image">
             <img
               className="category-links__thumbnail-2"
-              src="../../assets/shared/desktop/image-category-thumbnail-speakers.png"
+              src={Speaker}
               alt="Thumbnail of a black speaker"
             />
           </div>
@@ -50,7 +53,7 @@ const CategoryLinks = () => {
           <div className="category-links__image">
             <img
               className="category-links__thumbnail-3"
-              src="../../assets/shared/desktop/image-category-thumbnail-earphones.png"
+              src={Earphone}
               alt="Thumbnail of a black earphone"
             />
           </div>

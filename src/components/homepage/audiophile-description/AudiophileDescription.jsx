@@ -1,4 +1,7 @@
 import React from "react";
+import PortraitDesktop from "./portrait-desktop.jpg";
+import PortraitTablet from "./portrait-tablet.jpg";
+import PortraitMobile from "./portrait-mobile.jpg";
 
 const AudiophileDescription = () => {
   return (
@@ -22,22 +25,18 @@ const AudiophileDescription = () => {
           <picture>
             {/* Mobile */}
             <source
-              srcSet="
-              ../../assets/shared/mobile/image-best-gear.jpg
-            "
+              srcSet={PortraitMobile}
               media="(max-width: 420px)"
             />
 
             {/* tablet */}
             <source
-              srcSet="
-              ../../assets/shared/tablet/image-best-gear.jpg
-            "
+              srcSet={PortraitTablet}
               media="(max-width: 1024px)"
             />
 
             <img
-              src="../../assets/shared/desktop/image-best-gear.jpg"
+              src={PortraitDesktop}
               alt="A young man with a black headphone on his head enyoing music while staring outside a window."
               style={{ borderRadius: "8px" }}
             />

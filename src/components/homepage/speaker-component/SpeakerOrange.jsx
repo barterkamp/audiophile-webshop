@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Speaker from "./image-speaker-zx9.png";
+
 
 const SpeakerOrange = ({ products }) => {
   return (
@@ -8,7 +10,7 @@ const SpeakerOrange = ({ products }) => {
         <div className="speaker-orange__image">
           <img
             className="speaker-orange__image-1"
-            src="../../assets/home/desktop/image-speaker-zx9.png"
+            src={Speaker}
             alt="The ZX9 Speaker"
           />
         </div>

@@ -10,18 +10,17 @@ const EarphonesItems = ({ categoryImage, name, description }) => {
             <picture>
               {/* mobile image */}
               <source
-                srcSet={categoryImage.mobile}
+                srcSet={process.env.PUBLIC_URL + categoryImage.mobile}
                 media="(max-width: 420px)"
               />
 
               {/* tablet image*/}
               <source
-                srcSet={categoryImage.tablet}
+                srcSet={process.env.PUBLIC_URL + categoryImage.tablet}
                 media="(max-width: 1024px)"
               />
-
               <img
-                src={categoryImage.desktop}
+                src={process.env.PUBLIC_URL + categoryImage.desktop}
                 alt={`The ${name} against a grey background`}
               />
             </picture>
