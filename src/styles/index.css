@@ -78,12 +78,12 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 767px) and (max-width: 1080px) {
   .container {
     max-width: 70rem;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .container {
     max-width: 32rem;
   }
