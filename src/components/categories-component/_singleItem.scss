@@ -5,7 +5,7 @@
     row-gap: 1.2rem;
     margin: 0 auto;
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 743px) {
       @include flexColumn;
       gap: 4rem;
     }
@@ -16,13 +16,13 @@
     grid-template-columns: repeat(12, 1fr);
     margin-bottom: 16rem;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 744px) and (max-width: 1024px) {
       @include flexColumn;
       gap: 12rem;
       margin-bottom: 12rem;
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 743px) {
       @include flexColumn;
       gap: 8rem;
       margin-bottom: 8.8rem;
@@ -41,7 +41,7 @@
   &__inthebox {
     grid-column: 9/-1;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 744px) and (max-width: 1024px) {
       flex-direction: row;
       justify-content: space-between;
       padding-right: 14rem;
@@ -56,11 +56,11 @@
   gap: 3.2rem;
   margin-bottom: 16rem;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     gap: 2rem;
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     display: flex;
     flex-direction: column;
   }

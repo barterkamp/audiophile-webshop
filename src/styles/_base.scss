@@ -11,13 +11,13 @@
   margin: 0 auto;
 }
 
-@media (min-width: 767px) and (max-width: 1080px) {
+@media (min-width: 744px) and (max-width: 1080px) {
   .container {
-    max-width: 70rem;
+    max-width: 68rem;
   }
 }
 
-@media (min-width: 320px) and (max-width: 766px) {
+@media (min-width: 320px) and (max-width: 743px) {
   .container {
     max-width: 32rem;
   }
@@ -46,7 +46,7 @@
 .grid-right {
   grid-column: 8 / -1;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     grid-column: 7 / -1;
   }
 }

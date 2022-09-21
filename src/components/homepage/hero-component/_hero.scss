@@ -8,9 +8,9 @@
   background-size: cover;
   height: 650px;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     background-image: url(../../public/assets/home/tablet/image-header.jpg);
-    background-position: center bottom -0.5rem;
+    background-position: center bottom 0.5rem;
     background-size: 110%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     padding-right: 19.5rem;
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     background-image: url(../../public/assets/home/mobile/image-header.jpg);
     background-position: center bottom 7rem;
     background-size: 95%;

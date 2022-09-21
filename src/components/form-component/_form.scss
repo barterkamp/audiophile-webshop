@@ -15,11 +15,11 @@ input {
   outline: 0;
   border: 1px solid #cfcfcf;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     width: 50rem;
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     width: 28rem;
   }
 }
@@ -38,12 +38,12 @@ input:focus {
   margin-top: 14rem;
   padding: 5.4rem 3.8rem;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
     margin-top: 10rem;
   }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     grid-column: 1 / -1;
     padding: 2.4rem;
     margin-bottom: 1rem;
@@ -80,7 +80,11 @@ input:focus {
 #address {
   width: 61.5rem;
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 744px) and (max-width: 1080px) {
+    width: 50rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 743px) {
     width: 28rem;
   }
 }
@@ -91,11 +95,11 @@ input:focus {
   grid-column: 2 / span 6;
   align-self: start;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     grid-column: 3 / -1;
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     grid-column: 1 / -1;
   }
 }
@@ -105,11 +109,11 @@ input:focus {
 .sign-up-form {
   grid-column: 8 / 13;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     grid-column: 3 / -1;
     margin-top: 4rem;
   }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     grid-column: 1 / -1;
     margin-top: 4rem;
   }
