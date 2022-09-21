@@ -561,6 +561,10 @@ h6 {
   }
 }
 
+.active {
+  color: #d87d4a;
+}
+
 .hero__section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
