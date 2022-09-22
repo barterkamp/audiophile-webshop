@@ -6,6 +6,20 @@ label {
   margin-bottom: 1rem;
 }
 
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $primary-orange;
+  opacity: 1;
+}
+
 input {
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
