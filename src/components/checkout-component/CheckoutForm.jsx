@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { toast } from "react-toastify";
 
 const CheckoutForm = () => {
   const initialValues = {
@@ -37,7 +36,7 @@ const CheckoutForm = () => {
 
   const validate = (values) => {
     const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regex = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i);
     // for email validation
     if (!values.name) {
       errors.name = "Name is required";
