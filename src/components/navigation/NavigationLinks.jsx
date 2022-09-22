@@ -6,8 +6,10 @@ const NavigationLinks = () => {
     <ul className="navigation__links">
       <li>
         <NavLink
-          exact
-          activeClassName="active"
+          end
+          style={({ isActive }) => ({
+            color: isActive ? "$primary-orange" : "white",
+          })}
           className="navigation__link"
           to="/"
         >
@@ -16,7 +18,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <NavLink
-          activeClassName="active"
+          style={({ isActive }) => ({
+            color: isActive ? "$primary-orange" : "white",
+          })}
           className="navigation__link"
           to="/headphones"
         >
@@ -25,7 +29,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <NavLink
-          activeClassName="active"
+          style={({ isActive }) => ({
+            color: isActive ? "$primary-orange" : "white",
+          })}
           className="navigation__link"
           to="/speakers"
         >
@@ -34,7 +40,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <NavLink
-          activeClassName="active"
+          style={({ isActive }) => ({
+            color: isActive ? "$primary-orange" : "white",
+          })}
           className="navigation__link"
           to="/earphones"
         >

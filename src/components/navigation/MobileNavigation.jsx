@@ -9,8 +9,10 @@ const MobileNavigation = (props) => {
       <ul className="navigation__mobile-links">
         <li onClick={handleClose}>
           <NavLink
-            exact
-            activeClassName="active"
+            end
+            style={({ isActive }) => ({
+              color: isActive ? "$primary-orange" : "white",
+            })}
             className="navigation__link"
             to="/"
           >
@@ -19,7 +21,9 @@ const MobileNavigation = (props) => {
         </li>
         <li onClick={handleClose}>
           <NavLink
-            activeClassName="active"
+            style={({ isActive }) => ({
+              color: isActive ? "$primary-orange" : "white",
+            })}
             className="navigation__link"
             to="/headphones"
           >
@@ -28,7 +32,9 @@ const MobileNavigation = (props) => {
         </li>
         <li onClick={handleClose}>
           <NavLink
-            activeClassName="active"
+            style={({ isActive }) => ({
+              color: isActive ? "$primary-orange" : "white",
+            })}
             className="navigation__link"
             to="/speakers"
           >
@@ -37,7 +43,9 @@ const MobileNavigation = (props) => {
         </li>
         <li onClick={handleClose}>
           <NavLink
-            activeClassName="active"
+            style={({ isActive }) => ({
+              color: isActive ? "$primary-orange" : "white",
+            })}
             className="navigation__link"
             to="/earphones"
           >
