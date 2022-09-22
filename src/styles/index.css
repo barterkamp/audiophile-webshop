@@ -87,6 +87,18 @@ a {
     max-width: 32rem;
   }
 }
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.error404 {
+  width: 45%;
+}
+
 .grid-col-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -537,7 +549,6 @@ h6 {
   }
 }
 .navigation__link {
-  color: #ffffff;
   font-weight: 700;
   font-size: 1.3rem;
   line-height: 25px;
@@ -546,7 +557,10 @@ h6 {
   transition: all 0.3s;
   cursor: pointer;
 }
-.navigation__link:hover, .navigation__link:active {
+.navigation__link:hover {
+  color: #d87d4a;
+}
+.navigation__link.active {
   color: #d87d4a;
 }
 .navigation__actions {
@@ -559,10 +573,6 @@ h6 {
   .navigation__sign-in {
     margin-right: 1rem;
   }
-}
-
-.active {
-  color: #d87d4a;
 }
 
 .hero__section {

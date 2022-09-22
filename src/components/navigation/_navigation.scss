@@ -68,7 +68,7 @@
   }
 
   &__link {
-    color: $white;
+    // color: $white;
     font-weight: 700;
     font-size: 1.3rem;
     line-height: 25px;
@@ -77,8 +77,11 @@
     transition: all 0.3s;
     cursor: pointer;
 
-    &:hover,
-    &:active {
+    &:hover {
+      color: $primary-orange;
+    }
+
+    &.active {
       color: $primary-orange;
     }
   }
@@ -96,6 +99,4 @@
   }
 }
 
-.active {
-  color: $primary-orange;
-}
+

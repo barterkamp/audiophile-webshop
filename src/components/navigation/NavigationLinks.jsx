@@ -7,10 +7,9 @@ const NavigationLinks = () => {
       <li>
         <NavLink
           end
-          style={({ isActive }) => ({
-            color: isActive ? "$primary-orange" : "white",
-          })}
-          className="navigation__link"
+          className={({ isActive }) =>
+            isActive ? "navigation__link active" : "navigation__link"
+          }
           to="/"
         >
           home
@@ -18,10 +17,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "$primary-orange" : "white",
-          })}
-          className="navigation__link"
+          className={({ isActive }) =>
+            isActive ? "navigation__link active" : "navigation__link"
+          }
           to="/headphones"
         >
           headphones
@@ -29,10 +27,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "$primary-orange" : "white",
-          })}
-          className="navigation__link"
+          className={({ isActive }) =>
+            isActive ? "navigation__link active" : "navigation__link"
+          }
           to="/speakers"
         >
           speakers
@@ -40,10 +37,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <NavLink
-          style={({ isActive }) => ({
-            color: isActive ? "$primary-orange" : "white",
-          })}
-          className="navigation__link"
+          className={({ isActive }) =>
+            isActive ? "navigation__link active" : "navigation__link"
+          }
           to="/earphones"
         >
           earphones

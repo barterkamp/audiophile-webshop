@@ -23,6 +23,18 @@
   }
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.error404 {
+  width: 45%;
+}
+
 .grid-col-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
